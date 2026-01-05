@@ -19,13 +19,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "uselayouts | Free Premium Animated React & Framer Motion Components",
-    template: "%s | uselayouts",
+      "showcase-ui | Free Premium Animated React & Framer Motion Components",
+    template: "%s | showcase-ui",
   },
   description:
     "Free premium animated React components and micro-interactions built with Framer Motion and Tailwind CSS. Modern, ready-to-use motion components for high-converting websites.",
-  authors: [{ name: "Urvish Mali" }],
-  creator: "uselayouts",
+  authors: [{ name: "Yetunde Morenikeji" }],
+  creator: "showcase-ui",
   metadataBase: new URL("https://uselayouts.com"),
   icons: {
     icon: [
@@ -43,24 +43,24 @@ export const metadata: Metadata = {
       "uselayouts | Free Premium Animated React & Framer Motion Components",
     description:
       "Free premium animated React components and micro-interactions built with Framer Motion and Tailwind CSS. Modern, ready-to-use motion components for high-converting websites.",
-    siteName: "uselayouts",
+    siteName: "showcase-ui",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "uselayouts - Premium Animated React Components",
+        alt: "showcase-ui - Premium Animated React Components",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "uselayouts | Free Premium Animated React & Framer Motion Components",
+      "showcase-ui | Free Premium Animated React & Framer Motion Components",
     description:
       "Free premium animated React components and micro-interactions built with Framer Motion and Tailwind CSS. Modern, ready-to-use motion components for high-converting websites.",
     images: ["/og.png"],
-    creator: "@0xUrvish",
+    creator: "@morenikeji_48",
   },
 };
 

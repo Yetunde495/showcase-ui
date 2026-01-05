@@ -404,7 +404,7 @@
      {
       "name": "animated-tabs",
       "type": "registry:component",
-      "title": "Animatedd Tabs",
+      "title": "Animated Tabs",
       "description": "An animated tab interaction with smooth content switching.",
       "dependencies": [
         "motion",
