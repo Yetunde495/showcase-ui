@@ -96,7 +96,6 @@ export default function AnimatedTabsDemo() {
         <AnimatedTabs
           tabs={whatWeOfferTabContent}
           activeTabClassName="bg-primary text-primary-foreground shadow-md"
-          containerClassName="bg-white/50 backdrop-blur-md"
         />
       </div>
     </section>
