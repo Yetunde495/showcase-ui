@@ -401,6 +401,23 @@
         }
       ]
     },
+     {
+      "name": "animated-tabs",
+      "type": "registry:component",
+      "title": "Animated Tabs",
+      "description": "An animated tab interaction with smooth content switching.",
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/animated-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
     {
       "name": "stacked-list",
       "type": "registry:component",
