@@ -1,0 +1,85 @@
+---
+title: Animated Tabs
+description: A collection showcase with vertical navigation, progress indicators, and synchronized content updates.
+---
+
+import { Tab, Tabs } from "fumadocs-ui/components/tabs";
+import { Step, Steps } from "fumadocs-ui/components/steps";
+import { SourceCode } from "@/components/source-code";
+import { ComponentPreview } from "@/components/component-preview";
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    <ComponentPreview name="animated-tabs" full />
+  </Tab>
+  <Tab value="Code">
+    <SourceCode name="animated-tabs" />
+  </Tab>
+</Tabs>
+
+## Installation
+
+<Tabs items={['CLI', 'Manual']}>
+  <Tab value="CLI">
+    ```bash
+    npx shadcn@latest add "https://uselayouts.com/r/animated-tabs.json"
+    ```
+  </Tab>
+  <Tab value="Manual">
+    <Steps>
+      <Step>
+        ### Install dependencies
+
+        ```bash
+        npm install motion @hugeicons/react @hugeicons/core-free-icons
+        ```
+      </Step>
+      <Step>
+        ### Copy the code
+
+        Copy the code from the **Code** tab above into `components/vertical-tabs.tsx`.
+      </Step>
+      <Step>
+        ### Update imports
+
+        Update the imports to match your project structure.
+      </Step>
+    </Steps>
+
+  </Tab>
+</Tabs>
+
+## Usage
+
+### Customizing Content
+
+Modify the `SERVICES` array at the top of the file to add your own sections:
+
+```tsx
+// Change Here
+const SERVICES = [
+  {
+    id: "01",
+    title: "Web Design",
+    description: "Creating beautiful digital experiences.",
+    image: "https://images.unsplash.com...",
+  },
+  // ...
+];
+```
+
+```tsx
+import AnimatedTabs from "@/components/animated-tabs";
+
+export default function Page() {
+  return <AnimatedTabs />;
+}
+```
+
+## Features
+
+- **Progress Indicators**: Visual progress bars show auto-play status on active items.
+- **Content Synchronization**: Updates image and text content based on the selected item.
+- **Auto-cycle**: Automatically rotates through the collection (pauses on hover).
+- **Smooth Transitions**: Slide animations for content changes.
+- **Interactive Navigation**: Click to jump to any item in the collection.

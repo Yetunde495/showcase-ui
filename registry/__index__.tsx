@@ -374,6 +374,24 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "animated-tabs": {
+    name: "animated-tabs",
+    description: "A responsive animated tab interaction with smooth content switching.",
+    type: "registry:component",
+    registryDependencies: undefined,
+    files: [{
+      path: "registry/default/example/animated-tabs.tsx",
+      type: "registry:component",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/demo/animated-tabs-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "vertical-tabs"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "stacked-list": {
     name: "stacked-list",
     description: "An expandable list widget with a stacked layout and smooth morphing transitions.",
