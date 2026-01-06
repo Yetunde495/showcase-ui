@@ -89,12 +89,74 @@ const whatWeOfferTabContent = [
   },
 ];
 
+const tabContent = [
+  {
+    value: "green",
+    title: "Green",
+    content: (
+      <div>
+        <div>
+          <img
+            src={`https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200`}
+            alt="img"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    value: "yellow",
+    title: `Yellow`,
+    content: (
+      <div>
+        <div>
+          <img
+            src={`https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1200`}
+            alt="blue"
+            className="w-full h-full rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    value: "blue",
+    title: "Blue",
+    content: (
+      <div>
+        <div>
+          <img
+            src={`https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1200`}
+            alt="certificate img"
+            className="w-full h-full rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    ),
+  },
+];
+
 export default function AnimatedTabsDemo() {
   return (
     <section className="w-full bg-background py-6 px-4">
       <div className="w-full max-w-2xl mx-auto">
         <AnimatedTabs
           tabs={whatWeOfferTabContent}
+          activeTabClassName="bg-primary text-primary-foreground shadow-md"
+        />
+      </div>
+    </section>
+  );
+}
+
+export function AnimatedTabsWithArrowDemo() {
+  return (
+    <section className="w-full bg-background py-6 px-4">
+      <div className="w-full max-w-2xl mx-auto">
+        <AnimatedTabs
+          tabs={tabContent}
+          showArrows
           activeTabClassName="bg-primary text-primary-foreground shadow-md"
         />
       </div>

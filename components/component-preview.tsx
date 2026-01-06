@@ -37,7 +37,7 @@ export function ComponentPreview({
       <div
         className={cn(
           "relative flex w-full overflow-hidden light bg-[#F0F0F0] text-foreground rounded-xl",
-          !full ? "p-4 md:p-10 min-h-[400px]" : "p-0 min-h-[300px]",
+          !full ? "p-4 md:p-10 min-h-100" : "p-0 min-h-75",
           align === "center" && "items-center justify-center",
           align === "start" && "items-start justify-center",
           align === "end" && "items-end justify-center"

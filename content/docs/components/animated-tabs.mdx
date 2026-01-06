@@ -7,6 +7,9 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 import { Step, Steps } from "fumadocs-ui/components/steps";
 import { SourceCode } from "@/components/source-code";
 import { ComponentPreview } from "@/components/component-preview";
+import AnimatedTabs from "@/registry/default/example/animated-tabs";
+import {AnimatedTabsWithArrowDemo} from "@/registry/default/demo/animated-tabs-demo";
+
 
 <Tabs items={["Preview", "Code"]}>
   <Tab value="Preview">
@@ -16,6 +19,22 @@ import { ComponentPreview } from "@/components/component-preview";
     <SourceCode name="animated-tabs" />
   </Tab>
 </Tabs>
+
+## Animated Tabs (With Arrow Navigation)
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    <ComponentPreview name="" full>
+    <AnimatedTabsWithArrowDemo />
+    </ComponentPreview>
+  </Tab>
+
+  <Tab value="Code">
+    <SourceCode name="animated-tabs" />
+  </Tab>
+</Tabs>
+
+This variant enables optional arrow controls for users who prefer explicit navigation buttons, while still supporting swipe gestures.
 
 ## Installation
 
@@ -78,7 +97,16 @@ export default function Page() {
 
 ## Features
 
-- **Content Synchronization**: Updates image and text content based on the selected item.
-- **Auto-cycle**: Automatically rotates through the collection (pauses on hover).
-- **Smooth Transitions**: Slide animations for content changes.
-- **Interactive Navigation**: Click to jump to any item in the collection.
+- **Swipe Navigation**: Natural horizontal drag gestures on touch devices.
+- **Optional Arrow Controls**: Enable arrow buttons for explicit navigation.
+- **Overflow Awareness**: Edge blur indicates hidden items.
+- **Directional Transitions**: Content animates based on navigation direction.
+- **No Layout Shift**: Fixed-width tabs with adaptive expansion.
+- **Auto-cycle**: Automatically rotates through tabs (pauses on hover).
+
+## Props
+
+| Prop         | Type      | Default | Description                      |
+| ------------ | --------- | ------- | -------------------------------- |
+| `tabs`       | `Tab[]`   | —       | Tab configuration data           |
+| `showArrows` | `boolean` | `false` | Enables arrow navigation buttons |

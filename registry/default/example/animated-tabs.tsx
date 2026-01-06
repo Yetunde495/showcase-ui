@@ -94,10 +94,10 @@ export const AnimatedTabs = ({
     <>
       <div className="w-full flex justify-center items-center">
         {/* Left arrow */}
-        {showArrows && (
+        {showArrows && activeIndex !== 0 && (
           <button
             onClick={() => goToIndex(activeIndex - 1)}
-            className="absolute left-0 z-10 p-2 bg-white/10 shadow-md rounded-full"
+            className="absolute left-0.5 z-10 p-2 bg-white/10 shadow-md rounded-full"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -192,17 +192,17 @@ export const AnimatedTabs = ({
         </div>
 
         {/* Right arrow */}
-        {showArrows && (
+        {showArrows && activeIndex !== propTabs.length - 1 && (
           <button
             onClick={() => goToIndex(activeIndex + 1)}
-            className="absolute right-0 z-10 p-2 bg-white/10 shadow-md rounded-full"
+            className="absolute right-0.5 z-10 p-2 bg-white/10 shadow-md rounded-full"
           >
             <ChevronRight className="h-5 w-5" />
           </button>
         )}
       </div>
 
-      <div className={`${active?.bgColor && "mt-[4%]"}`}>
+      <div className={`${active?.bgColor && "mt-[2%]"}`}>
         <FadeInDiv
           tabs={propTabs}
           active={active}
