@@ -4,19 +4,6 @@
   "homepage": "https://uselayouts.com",
   "items": [
     {
-      "name": "3d-book",
-      "type": "registry:component",
-      "title": "3D Book",
-      "description": "An interactive 3D book component with page flip animations.",
-      "dependencies": ["motion", "clsx", "tailwind-merge"],
-      "files": [
-        {
-          "path": "registry/default/example/3d-book.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "animated-collection",
       "type": "registry:component",
       "title": "Animated Collection",

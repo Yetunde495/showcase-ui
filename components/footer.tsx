@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const footerLinks = {
   library: [
-    { name: "Components", href: "/docs/components/3d-book", badge: "NEW" },
+    { name: "Components", href: "/docs/components/animated-tabs", badge: "NEW" },
     { name: "Documentation", href: "/docs/introduction" },
     { name: "Star on GitHub", href: "https://github.com/iurvish/uselayouts" },
   ],
