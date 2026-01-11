@@ -18,7 +18,7 @@ import Image from "next/image";
 import GithubStarButton from "./github-button";
 
 const menuItems = [
-  { name: "Components", href: "/docs/components/3d-book" },
+  { name: "Components", href: "/docs/components/animated-tabs" },
   { name: "Documentation", href: "/docs/introduction" },
   { name: "Meet Creator", href: "https://urvishh.me" },
 ];

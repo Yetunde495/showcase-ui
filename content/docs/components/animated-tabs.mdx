@@ -11,14 +11,18 @@ import AnimatedTabs from "@/registry/default/example/animated-tabs";
 import {AnimatedTabsWithArrowDemo} from "@/registry/default/demo/animated-tabs-demo";
 
 
-<Tabs items={["Preview", "Code"]}>
+## Default Animated Tabs
+
+<Tabs  className="bg-transparent" items={["Preview", "Code"]}>
   <Tab value="Preview">
     <ComponentPreview name="animated-tabs" full />
   </Tab>
+  
   <Tab value="Code">
     <SourceCode name="animated-tabs" />
   </Tab>
 </Tabs>
+
 
 ## Animated Tabs (With Arrow Navigation)
 

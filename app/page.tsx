@@ -5,7 +5,7 @@ import { Testimonial } from "@/components/testimonial";
 
 export default function Page() {
   return (
-    <main className="min-h-screen light bg-white font-[family-name:var(--font-geist-sans)]">
+    <main className="min-h-screen light bg-white font-[-font-exo]">
       <Hero />
       <Testimonial />
       <ProductBenefits />

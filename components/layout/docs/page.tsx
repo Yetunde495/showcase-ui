@@ -13,6 +13,7 @@ import type * as PageTree from "fumadocs-core/page-tree";
 import { InlineTOC } from "@/components/inline-toc";
 import { ArrowLeft01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { TocPill } from "@/components/fixed-toc";
 
 export interface DocsPageProps {
   toc?: TOCItemType[];
@@ -45,12 +46,12 @@ export function DocsPage({ toc = [], ...props }: DocsPageProps) {
   return (
     <AnchorProvider toc={toc}>
       <div className="flex flex-1 flex-col min-w-0">
-        <StickyTOC toc={toc} />
         <main className="flex w-full min-w-0 flex-col flex-1">
-          <article className="flex flex-1 flex-col w-full max-w-[860px] gap-6 px-4 py-8 md:px-6 md:mx-auto min-w-0">
+          <article className="flex flex-1 flex-col w-full max-w-215 gap-6 px-4 py-8 md:px-6 md:mx-auto min-w-0">
             {props.children}
             <Footer />
           </article>
+          <TocPill items={toc} />
         </main>
       </div>
       {toc.length > 0 && (
