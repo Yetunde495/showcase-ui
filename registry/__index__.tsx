@@ -374,6 +374,24 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+    "fluid-toolbar": {
+    name: "fluid-toolbar",
+    description: "A responsive fluid toolbar with animated transitions.",
+    type: "registry:component",
+    registryDependencies: undefined,
+    files: [{
+      path: "registry/default/example/fluid-toolbar.tsx",
+      type: "registry:component",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/demo/fluid-toolbar-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "animated-tabs"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "stacked-list": {
     name: "stacked-list",
     description: "An expandable list widget with a stacked layout and smooth morphing transitions.",

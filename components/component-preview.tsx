@@ -29,15 +29,15 @@ export function ComponentPreview({
   return (
     <div
       className={cn(
-        "relative flex flex-col w-full rounded-xl border border-fd-border",
+        "relative flex flex-col w-full bg-slate-50 dark:bg-white/5 p-[3%] rounded-xl border border-fd-border",
         className
       )}
       {...props}
     >
       <div
         className={cn(
-          "relative flex w-full overflow-hidden text-foreground rounded-xl",
-          !full ? "p-4 md:p-10 min-h-100" : "p-0 min-h-75",
+          "relative flex w-full overflow-hidden text-foreground bg-background px-4 border border-fd-border rounded-[30px]",
+          !full ? "min-h-100" : "min-h-75",
           align === "center" && "items-center justify-center",
           align === "start" && "items-start justify-center",
           align === "end" && "items-end justify-center"

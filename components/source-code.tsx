@@ -52,7 +52,7 @@ export async function SourceCode({
   });
 
   return (
-    <CodeBlock title={title || path.basename(filePath)}>
+    <CodeBlock className="bg-slate-100 dark:bg-slate-900 mt-4" title={title || path.basename(filePath)}>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </CodeBlock>
   );

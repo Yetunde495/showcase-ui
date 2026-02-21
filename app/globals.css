@@ -198,22 +198,7 @@
   max-width: 100%;
   overflow-wrap: break-word;
 }
-.my-tabs {
-  background: transparent;
-  border: none
-}
-.my-tabs [role="tablist"] {
-  gap: 0.5rem;
-}
 
-.my-tabs [role="tab"] {
-  font-size: 14px;
-  padding: 6px 12px;
-}
-
-.my-tabs [role="tab"][aria-selected="true"] {
-  background: transparent;
-}
 
 
 /* Ensure code blocks don't expand parent */

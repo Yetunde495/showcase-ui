@@ -1,0 +1,110 @@
+---
+title: Fluid Toolbar
+description: A responsive fluid toolbar with animated transitions.
+---
+
+import { Tab, Tabs } from "fumadocs-ui/components/tabs";
+import { Step, Steps } from "fumadocs-ui/components/steps";
+import { SourceCode } from "@/components/source-code";
+import { ComponentPreview } from "@/components/component-preview";
+import FluidToolbar from "@/registry/default/example/fluid-toolbar";
+import {FluidToolbarWithTable} from "@/registry/default/demo/fluid-toolbar-demo";
+
+
+### Default Fluid Toolbar
+
+<Tabs  className="bg-transparent" items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    <ComponentPreview name="fluid-toolbar" full />
+  </Tab>
+  
+  <Tab value="Code">
+    <SourceCode name="fluid-toolbar" />
+  </Tab>
+</Tabs>
+
+
+### Fluid Toolbar with Table
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    <ComponentPreview name="" full>
+    <FluidToolbarWithTable />
+    </ComponentPreview>
+  </Tab>
+
+  <Tab value="Code">
+    <SourceCode name="fluid-toolbar" />
+  </Tab>
+</Tabs>
+
+This variant enables optional arrow controls for users who prefer explicit navigation buttons, while still supporting swipe gestures.
+
+## Installation
+
+<Tabs items={['CLI', 'Manual']}>
+  <Tab value="CLI">
+    ```bash
+    npx shadcn@latest add "https://uselayouts.com/r/fluid-toolbar.json"
+    ```
+  </Tab>
+  <Tab value="Manual">
+    <Steps>
+      <Step>
+        ### Install dependencies
+
+        ```bash
+        npm install motion @hugeicons/react @hugeicons/core-free-icons
+        ```
+      </Step>
+      <Step>
+        ### Copy the code
+
+        Copy the code from the **Code** tab above into `components/fluid-toolbar.tsx`.
+      </Step>
+      <Step>
+        ### Update imports
+
+        Update the imports to match your project structure.
+      </Step>
+    </Steps>
+
+  </Tab>
+</Tabs>
+
+## Usage
+
+### Customizing Content
+
+Modify the `submissions` array at the top of the file to add your own sections:
+
+```tsx
+// Change Here
+const SERVICES = [
+  {
+    id: "01",
+    title: "Web Design",
+    description: "Creating beautiful digital experiences.",
+    image: "https://images.unsplash.com...",
+  },
+  // ...
+];
+```
+
+```tsx
+import FluidToolbar from "@/components/fluid-toolbar";
+
+export default function Page() {
+  return <FluidToolbar />;
+}
+```
+
+## Features
+
+- **Swipe Navigation**: Natural horizontal drag gestures on touch devices.
+- **Optional Arrow Controls**: Enable arrow buttons for explicit navigation.
+- **Overflow Awareness**: Edge blur indicates hidden items.
+- **Directional Transitions**: Content animates based on navigation direction.
+- **No Layout Shift**: Fixed-width tabs with adaptive expansion.
+- **Auto-cycle**: Automatically rotates through tabs (pauses on hover).
+

@@ -4,4 +4,8 @@ export const docs = defineDocs({
   dir: "content/docs",
 });
 
+export const components = defineDocs({
+  dir: "content/components",
+});
+
 export default defineConfig();

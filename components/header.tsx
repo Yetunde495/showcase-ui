@@ -18,7 +18,7 @@ import Image from "next/image";
 import GithubStarButton from "./github-button";
 
 const menuItems = [
-  { name: "Components", href: "/docs/components/animated-tabs" },
+  { name: "Components", href: "/components/fluid-toolbar" },
   { name: "Documentation", href: "/docs/introduction" },
   { name: "Meet Creator", href: "https://urvishh.me" },
 ];
@@ -40,17 +40,17 @@ const Header = () => {
                 aria-label="home"
                 className="flex items-center space-x-2 "
               >
-                {/* <span className="text-xl font-bold tracking-tight text-zinc-900">
-                  uselayouts
-                </span> */}
+                <span className="text-xl font-bold tracking-tight text-zinc-900">
+                  showcase-ui
+                </span>
 
-                <Image
+                {/* <Image
                   src="/logomark.svg"
                   alt="logo"
                   width={184}
                   height={33}
                   className="pointer-events-none select-none"
-                />
+                /> */}
               </Link>
 
               <button
