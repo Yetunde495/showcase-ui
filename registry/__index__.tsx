@@ -386,7 +386,7 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/default/demo/fluid-toolbar-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "animated-tabs"
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "fluid-toolbar"
       return { default: mod.default || mod[exportName] }
     }),
     categories: undefined,
