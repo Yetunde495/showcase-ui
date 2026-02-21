@@ -405,6 +405,23 @@
         }
       ]
     },
+     {
+      "name": "fluid-toolbar",
+      "type": "registry:component",
+      "title": "Fluid Toolbar",
+      "description": "A responsive fluid toolbar with animated transitions.",
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/fluid-toolbar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
     {
       "name": "stacked-list",
       "type": "registry:component",
